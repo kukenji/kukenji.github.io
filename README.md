@@ -1,37 +1,44 @@
 # Kenji Ku — Portfolio
 
-A responsive, static professional portfolio. No build tools required. Suitable for GitHub Pages.
+A responsive, static professional portfolio built with vanilla HTML, CSS, and JavaScript. No build tools or dependencies are required.
+
+🌐 **Live site:** [https://kukenji.github.io/](https://kukenji.github.io/)
+
+🐙 **GitHub profile:** [github.com/kukenji](https://github.com/kukenji)
 
 ## Preview locally
 
-Open `index.html` in a browser or run:
+Open `index.html` in a browser, or start a local server from the repository root:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000`.
+Then visit [http://localhost:8000](http://localhost:8000).
 
 ## Publish with GitHub Pages
 
-1. Sign in to GitHub and create a **public** repository named `YOUR_USERNAME.github.io` (replace `YOUR_USERNAME` with your exact GitHub username). For a custom repo name, the URL will instead include the repository name.
-2. Upload all files, including `index.html`, `style.css`, `script.js`, `assets/`, and `.nojekyll`, to the repository root. Alternatively, use `git add .`, `git commit`, and `git push`.
-3. Navigate to **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**, select `main`, select `/(root)`, and save.
-5. Once deployed, the site will be available at `https://YOUR_USERNAME.github.io/` for the username-named repository.
+This portfolio is hosted from the `main` branch of [`kukenji/kukenji.github.io`](https://github.com/kukenji/kukenji.github.io).
 
-## Customize before publishing
+To check or update the Pages configuration:
 
-- Update the email address in `index.html` if you prefer another professional address.
-- Add your actual GitHub profile link, project repositories, or demos where you have public URLs. No GitHub username is assumed here.
-- Adjust project details and previously reported impact metrics as needed before publishing.
-- Add a resume PDF and link it in the navigation only if you want a public download; check privacy first.
-- Replace the stylized project visuals with your own approved screenshots if desired.
+1. Open **Settings → Pages** in this repository.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select `main` and `/(root)`, then save.
+4. After deployment, the site is available at [https://kukenji.github.io/](https://kukenji.github.io/).
+
+## Customize
+
+- Update the contact email in `index.html` if you want to use a different professional address.
+- Add links to public GitHub projects, demos, or other professional profiles you want to feature.
+- Review project descriptions and impact metrics for accuracy before publishing.
+- Add a resume PDF only if you intend it to be publicly downloadable, and check it for personal information first.
+- Replace the stylized project visuals with screenshots you have permission to publish.
 
 ## Privacy and accuracy
 
-The site intentionally does not publish a phone number, residential address, proprietary code, or internal screenshots. Professional metrics are based on previously supplied resume information and should be verified before publishing.
+This portfolio avoids publishing a phone number, residential address, proprietary code, or internal screenshots. Review all personal details and professional claims before making changes public.
 
 ## Technology
 
-Vanilla HTML, CSS, and JavaScript. No framework, paid hosting, or dependencies needed for publishing. The optional Google Fonts stylesheet falls back to system fonts if unavailable.
+Vanilla HTML, CSS, and JavaScript. No framework, paid hosting, or dependencies are required. The optional Google Fonts stylesheet falls back to system fonts if unavailable.
