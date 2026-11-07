@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070b19"><meta name="description" content="CAPRI Neon District — a small playable, original 3D cyberpunk world by Kenji Ku.">
+<title>CAPRI // Neon District — Kenji Ku</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="world.css">
+</head>
+<body>
+<div id="world" role="application" aria-label="3D cyberpunk city. Use WASD to fly, Q and E to change altitude, drag to orbit camera, and click location markers."></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="topbar"><a class="return" href="index.html">← <span>KENJI.KU</span> / PORTFOLIO</a><div class="world-brand"><span class="blink"></span> CAPRI <b>//</b> NEON DISTRICT</div><div class="clock"><span id="clock">23:47</span> <span class="status">● LIVE SIMULATION</span></div></header>
+<div class="vignette" aria-hidden="true"></div>
+<section class="intro" id="intro"><p class="overline">AN INTERACTIVE MINI WORLD · BY KENJI KU</p><h1>WELCOME TO<br><em>CAPRI.</em></h1><p>Take the controls. Cruise above a neon metropolis, meet its residents, and discover a small world built for curiosity.</p><div class="intro-actions"><button id="start" class="primary">ENTER THE CITY <span>↗</span></button><span>NO INSTALL · PLAY IN YOUR BROWSER</span></div><div class="intro-stats"><span>01 / FREE ROAM</span><span>02 / CHARACTERS</span><span>03 / CITY SECRETS</span></div></section>
+<div class="hud" id="hud" hidden>
+  <aside class="hud-left"><div class="hud-kicker">VEHICLE CONNECTED <span class="pink">◉</span></div><div class="craft-title">CAPRI<span>—</span>01</div><div class="bar"><span id="energyBar"></span></div><div class="sub">HOVERCRAFT <span>STABLE</span></div><div class="readout"><div><small>ALTITUDE</small><strong id="altitude">24m</strong></div><div><small>SPEED</small><strong id="speed">0</strong></div><div><small>DATA SHARDS</small><strong><span id="shards">0</span>/6</strong></div></div></aside>
+  <aside class="mission"><div class="mission-icon">✧</div><div><b>EXPLORE THE DISTRICT</b><p>Collect 6 data shards. Find <strong>Talia</strong> and <strong>D</strong>. Hover over <strong>◇</strong> icons to learn more.</p></div></aside>
+  <aside class="controls"><div class="keyhelp">W A S D <span>MOVE</span></div><div class="keyhelp">Q / E <span>DOWN / UP</span></div><div class="keyhelp">DRAG <span>LOOK AROUND</span></div><div class="keyhelp">SHIFT <span>BOOST</span></div><button id="recenter" aria-label="Reset camera">↺ RESET VIEW</button></aside>
+  <div class="center-reticle" aria-hidden="true"><span></span></div>
+  <div class="compass">N <span id="heading">↗ NE</span> E</div>
+  <div class="toast" id="toast" role="status"></div>
+  <button id="helpBtn" class="help" aria-label="Show controls">? CONTROLS</button>
+  <div class="touch-controls" id="touchControls"><div class="dpad"><button data-key="w" aria-label="Forward">▲</button><div><button data-key="a" aria-label="Left">◀</button><button data-key="s" aria-label="Backward">▼</button><button data-key="d" aria-label="Right">▶</button></div></div><div class="altpad"><button data-key="e">UP ↑</button><button data-key="q">DOWN ↓</button><button data-key="shift">BOOST ⚡</button></div></div>
+</div>
+<div id="markers" class="markers" aria-label="Interactive map locations"></div>
+<div class="dialog-backdrop" id="dialogBackdrop" hidden><section class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"><div class="dialog-top"><span id="dialogKind">DISTRICT FILE</span><button id="dialogClose" aria-label="Close details">✕</button></div><div class="dialog-glyph" id="dialogGlyph">✧</div><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div class="dialog-details" id="dialogDetails"></div><button id="dialogOkay" class="primary">BACK TO THE CITY ↗</button></section></div>
+<div class="loading" id="loading"><div class="loading-logo">C<span>◈</span>PRI</div><div class="loading-line"><span></span></div><p>BUILDING THE NEON DISTRICT</p></div>
+<script type="module" src="world.js"></script>
+</body></html>
